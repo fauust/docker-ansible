@@ -1,0 +1,26 @@
+---
+language: minimal
+services: docker
+
+env:
+  matrix:
+    - BASE_IMAGE: fauust/docker-systemd:debian-10
+    - BASE_IMAGE: fauust/docker-systemd:debian-sid
+    - BASE_IMAGE: fauust/docker-systemd:ubuntu-18.04
+    - BASE_IMAGE: fauust/docker-systemd:ubuntu-20.04
+
+before_install:
+  - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+  - wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
+  - sudo apt-get install ./dive_0.9.2_linux_amd64.deb
+addons:
+  apt:
+    update: true
+
+script:
+  - docker build . -t fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd://} --build-arg base_image=$BASE_IMAGE
+  - docker run --rm -v $(pwd):/src -w /src hadolint/hadolint:v1.7.0 hadolint Dockerfile
+  - dive --ci fauust/docker-systemd:${BASE_IMAGE/fauust\/docker-systemd://}
+  - docker run --name test-${BASE_IMAGE/fauust\/docker-systemd://} -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro fauust/docker-systemd:${BASE_IMAGE/fauust\/docker-systemd://}
+  - sleep 2
+  - docker exec -t test-${BASE_IMAGE/fauust\/docker-systemd://} systemd-analyze
