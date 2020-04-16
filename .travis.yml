@@ -18,9 +18,7 @@ addons:
     update: true
 
 script:
-  - docker build . -t fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd://} --build-arg base_image=$BASE_IMAGE
+  - docker build . -t fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/} --build-arg base_image=${BASE_IMAGE/fauust\/docker-systemd:/}
   - docker run --rm -v $(pwd):/src -w /src hadolint/hadolint:v1.7.0 hadolint Dockerfile
-  - dive --ci fauust/docker-systemd:${BASE_IMAGE/fauust\/docker-systemd://}
-  - docker run --name test-${BASE_IMAGE/fauust\/docker-systemd://} -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro fauust/docker-systemd:${BASE_IMAGE/fauust\/docker-systemd://}
-  - sleep 2
-  - docker exec -t test-${BASE_IMAGE/fauust\/docker-systemd://} systemd-analyze
+  - dive --ci fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/}
+  - docker run --rm fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/} python3 -V
