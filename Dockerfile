@@ -4,7 +4,6 @@ FROM fauust/docker-systemd:"$base_image"
 RUN set -eux \
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
-      bash \
       ca-certificates \
       iproute2 \
       python3 \
