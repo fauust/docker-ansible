@@ -4,6 +4,7 @@ services: docker
 
 env:
   matrix:
+    - BASE_IMAGE: fauust/docker-systemd:debian-9
     - BASE_IMAGE: fauust/docker-systemd:debian-10
     - BASE_IMAGE: fauust/docker-systemd:debian-sid
     - BASE_IMAGE: fauust/docker-systemd:ubuntu-18.04
