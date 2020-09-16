@@ -1,6 +1,6 @@
 # docker-ansible
 
-[![travis build status](https://img.shields.io/travis/fauust/docker-ansible?logo=travis)](https://travis-ci.org/fauust/docker-ansible)
+[![travis build status](https://img.shields.io/travis/fauust/docker-ansible?logo=travis)](https://travis-ci.com/fauust/docker-ansible)
 [![docker build status](https://img.shields.io/docker/cloud/build/fauust/docker-ansible?logo=docker&label=build)](https://hub.docker.com/r/fauust/docker-ansible)
 
 Docker container for ansible testing on Debian based OS.
