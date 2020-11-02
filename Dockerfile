@@ -6,6 +6,7 @@ RUN set -eux \
     && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
       ca-certificates \
       iproute2 \
+      lsb-release \
       python3 \
       python3-apt \
       sudo \
