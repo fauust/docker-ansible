@@ -11,10 +11,10 @@ RUN set -eux \
       python3-apt \
       sudo \
       xz-utils \
-    && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-      /tmp/* \
-      /var/tmp/*
+      /usr/share/doc \
+      /usr/share/man \
+    && apt-get clean
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/lib/systemd/systemd"]
