@@ -12,6 +12,7 @@ RUN set -eux \
       sudo \
       xz-utils \
     && rm -rf /var/lib/apt/lists/* \
+      /var/cache/debconf/* \
       /usr/share/doc \
       /usr/share/man \
     && apt-get clean
