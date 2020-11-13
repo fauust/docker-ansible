@@ -40,5 +40,9 @@ jobs:
 
 script:
   - docker build . -t fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/} --build-arg base_image=${BASE_IMAGE/fauust\/docker-systemd:/}
-  - docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/mnt -w /mnt wagoodman/dive:latest --ci fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/}
+  - |
+    # do not dive check on debian sid
+    if [[ $BASE_IMAGE != "fauust/docker-systemd:debian-sid" ]]; then
+      docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/mnt -w /mnt wagoodman/dive:latest --ci fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/}
+    fi
   - docker run --rm fauust/docker-ansible:${BASE_IMAGE/fauust\/docker-systemd:/} python3 -V
