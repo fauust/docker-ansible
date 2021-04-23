@@ -19,6 +19,7 @@ Example `base_system` arguments :
 - `fauust/docker-systemd:ubuntu-18.04`
 - `fauust/docker-systemd:ubuntu-20.04`
 - `fauust/docker-systemd:ubuntu-20.10`
+- `fauust/docker-systemd:ubuntu-21.04`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
 
@@ -29,6 +30,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull fauust/docker-ansible:ubuntu-18.04
 ❯ docker pull fauust/docker-ansible:ubuntu-20.04
 ❯ docker pull fauust/docker-ansible:ubuntu-20.10
+❯ docker pull fauust/docker-ansible:ubuntu-21.04
 ```
 
 ## Notes
