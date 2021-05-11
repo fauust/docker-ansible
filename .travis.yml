@@ -10,7 +10,7 @@ env:
     - BASE_IMAGE: fauust/docker-systemd:ubuntu-18.04
     - BASE_IMAGE: fauust/docker-systemd:ubuntu-20.04
     - BASE_IMAGE: fauust/docker-systemd:ubuntu-20.10
-    - BASE_IMAGE: fauust/docker-systemd:ubuntu-21.04
+    # - BASE_IMAGE: fauust/docker-systemd:ubuntu-21.04
 
 before_install:
   - |
