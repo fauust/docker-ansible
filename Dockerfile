@@ -17,5 +17,5 @@ RUN set -eux \
       /usr/share/man \
     && apt-get clean
 
-VOLUME ["/sys/fs/cgroup"]
+VOLUME ["/sys/fs/cgroup", "/run"]
 CMD ["/lib/systemd/systemd"]
