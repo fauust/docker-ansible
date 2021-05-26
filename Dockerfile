@@ -8,7 +8,6 @@ RUN set -eux \
       iproute2 \
       lsb-release \
       python3 \
-      python3-pip \
       python3-apt \
       sudo \
       xz-utils \
@@ -17,8 +16,6 @@ RUN set -eux \
       /usr/share/doc \
       /usr/share/man \
     && apt-get clean
-
-RUN pip3 install --no-cache-dir ansible
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/lib/systemd/systemd"]

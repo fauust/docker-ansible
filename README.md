@@ -8,7 +8,7 @@ Docker container for ansible testing on Debian based OS.
 ## Build
 
 ```console
-❯ docker build . -t ansible-debian-sid  --build-arg base_system=fauust/docker-systemd:debian-sid
+❯ docker build . -t ansible-debian-sid  --build-arg base_image=debian-sid
 ```
 
 Example `base_system` arguments :
