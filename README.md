@@ -1,7 +1,7 @@
 # docker-ansible
 
-[![travis build status](https://img.shields.io/travis/fauust/docker-ansible?logo=travis)](https://travis-ci.com/fauust/docker-ansible)
-[![docker build status](https://img.shields.io/docker/cloud/build/fauust/docker-ansible?logo=docker&label=build)](https://hub.docker.com/r/fauust/docker-ansible)
+[![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/pre-commit/badge.svg?branch=master)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22pre-commit%22)
+[![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/build/badge.svg?branch=master)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22build%22)
 
 Docker container for ansible testing on Debian based OS.
 
