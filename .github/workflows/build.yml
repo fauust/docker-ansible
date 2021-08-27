@@ -25,7 +25,7 @@ jobs:
           - 5000:5000
         # this is needed because we restart the docker daemon for experimental
         # support
-        # options: "--restart always"
+        options: "--restart always"
     name: ${{ matrix.base_img }}
     strategy:
       matrix:
@@ -40,9 +40,13 @@ jobs:
             "ubuntu-20.10",
             "ubuntu-21.04",
           ]
-
     env:
       BASE_IMAGE: ${{ matrix.base_img }}
+      DOCKER_DEPLOY_IMAGES: false
+      DOCKER_PLATFORMS: >
+        linux/amd64
+        linux/arm/v7
+        linux/arm64/v8
 
     steps:
       - uses: actions/checkout@v2
@@ -51,15 +55,28 @@ jobs:
           set -vx
           echo "IMG=${BASE_IMAGE}">>$GITHUB_ENV
           echo "REPO=docker-ansible">>$GITHUB_ENV
+          echo "DOCKER_BUILD_PLATFORMS=${DOCKER_PLATFORMS// /,}" >>$GITHUB_ENV
       - name: Set up Docker Buildx (local builds)
         uses: docker/setup-buildx-action@v1
         with:
           driver-opts: network=host
+      - name: Enable experimental support
+        run: |
+          config='/etc/docker/daemon.json'
+          if [[ -e "$config" ]]; then
+            sudo sed -i -e 's/{/{ "experimental": true, /' "$config"
+          else
+            echo '{ "experimental": true }' | sudo tee "$config"
+          fi
+          sudo systemctl restart docker
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
       - name: Build
         uses: docker/build-push-action@v2
         with:
           context: .
           build-args: base_image=${{ env.IMG }}
+          platforms: ${{ env.DOCKER_BUILD_PLATFORMS }}
           push: true
           tags: localhost:5000/${{ secrets.DOCKER_USER }}/${{ env.REPO }}:${{ env.IMG }}
       - name: Dive check
