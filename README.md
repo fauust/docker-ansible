@@ -3,7 +3,7 @@
 [![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/pre-commit/badge.svg?branch=master)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22pre-commit%22)
 [![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/build/badge.svg?branch=master)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22build%22)
 
-Multi-arch docker container for ansible testing on Debian based OS.
+Multi-arch docker containers for ansible testing on Debian based OS.
 
 ## Build
 
