@@ -93,9 +93,8 @@ jobs:
           docker exec test-${{ env.IMG }} python3 -V
       - name: Check GitHub settings
         if: >
-          github.event_name == 'push' &&
-          (github.ref == 'refs/heads/master' ||
-          startsWith(github.ref, 'refs/tags/')) &&
+          (github.event_name == 'push' || github.event_name == 'schedule') &&
+          (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/')) &&
           github.repository == 'fauust/docker-ansible'
         run: |
           missing=()
