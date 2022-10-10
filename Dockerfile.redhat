@@ -1,0 +1,17 @@
+ARG base_image=fedora-36
+FROM fauust/docker-systemd:"$base_image"
+
+RUN set -eux \
+    && yum -y install \
+      ca-certificates \
+      python3 \
+      python3-dnf \
+      sudo \
+    # clean doc \
+    && rm -rf /usr/share/doc \
+      /usr/share/man \
+    # clean yum/rpm \
+    && yum clean all
+
+VOLUME ["/sys/fs/cgroup"]
+CMD ["/lib/systemd/systemd"]
