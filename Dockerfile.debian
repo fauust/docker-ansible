@@ -1,5 +1,5 @@
 ARG base_image=debian-10
-FROM fauust/docker-systemd:"$base_image"
+FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \
     && apt-get update \

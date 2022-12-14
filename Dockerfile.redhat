@@ -1,5 +1,5 @@
 ARG base_image=fedora-36
-FROM fauust/docker-systemd:"$base_image"
+FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \
     && yum -y install \

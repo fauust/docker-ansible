@@ -3,7 +3,10 @@
 [![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/pre-commit/badge.svg?branch=main)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22pre-commit%22)
 [![GitHub Actions](https://github.com/fauust/docker-ansible/workflows/build/badge.svg?branch=main)](https://github.com/fauust/docker-ansible/actions?query=workflow%3A%22build%22)
 
-Multi-arch docker containers for ansible testing.
+Multi-arch docker containers for ansible testing. Images are available on:
+
+- ghcr.io
+- docker.io
 
 ## Build
 
