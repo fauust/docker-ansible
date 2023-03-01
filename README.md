@@ -19,6 +19,8 @@ Example `base_system` arguments :
 
 - `fauust/docker-systemd:debian-9`
 - `fauust/docker-systemd:debian-10`
+- `fauust/docker-systemd:debian-11`
+- `fauust/docker-systemd:debian-12`
 - `fauust/docker-systemd:debian-sid`
 - `fauust/docker-systemd:ubuntu-18.04`
 - `fauust/docker-systemd:ubuntu-20.04`
@@ -36,6 +38,8 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ```console
 ❯ docker pull fauust/docker-ansible:debian-9
 ❯ docker pull fauust/docker-ansible:debian-10
+❯ docker pull fauust/docker-ansible:debian-11
+❯ docker pull fauust/docker-ansible:debian-12
 ❯ docker pull fauust/docker-ansible:debian-sid
 ❯ docker pull fauust/docker-ansible:ubuntu-18.04
 ❯ docker pull fauust/docker-ansible:ubuntu-20.04
