@@ -28,48 +28,48 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # - image: debian-10
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8
-          # - image: debian-11
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: debian-12
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: debian-sid
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: ubuntu-18.04
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: ubuntu-20.04
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: ubuntu-22.04
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: ubuntu-23.04
-          #   dockerfile: Dockerfile.debian
-          #   platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: fedora-37
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: fedora-38
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: almalinux-8
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: almalinux-9
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
-          # - image: rockylinux-8
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8
-          # - image: rockylinux-9
-          #   dockerfile: Dockerfile.redhat
-          #   platforms: linux/amd64,linux/arm64/v8
+          - image: debian-10
+            dockerfile: Dockerfile.debian
+            platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8
+          - image: debian-11
+            dockerfile: Dockerfile.debian
+            platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: debian-12
+            dockerfile: Dockerfile.debian
+            platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: debian-sid
+            dockerfile: Dockerfile.debian
+            platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: ubuntu-18.04
+            dockerfile: Dockerfile.debian
+            platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: ubuntu-20.04
+            dockerfile: Dockerfile.debian
+            platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: ubuntu-22.04
+            dockerfile: Dockerfile.debian
+            platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: ubuntu-23.04
+            dockerfile: Dockerfile.debian
+            platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: fedora-37
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: fedora-38
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: almalinux-8
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: almalinux-9
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
+          - image: rockylinux-8
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8
+          - image: rockylinux-9
+            dockerfile: Dockerfile.redhat
+            platforms: linux/amd64,linux/arm64/v8
           - image: alpine-3.18
             dockerfile: Dockerfile.alpine
             platforms: linux/amd64,linux/arm64/v8

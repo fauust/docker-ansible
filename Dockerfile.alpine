@@ -2,7 +2,7 @@ ARG base_image=alpine-3.18
 FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \
-    apk add --update --no-cache \
+    && apk add --update --no-cache \
     bash \
     ca-certificates \
     iproute2 \
