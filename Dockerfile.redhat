@@ -1,4 +1,4 @@
-ARG base_image=fedora-36
+ARG base_image=fedora-38
 FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \

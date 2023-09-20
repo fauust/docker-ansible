@@ -25,7 +25,6 @@ Example `base_system` arguments :
 - `fauust/docker-systemd:ubuntu-20.04`
 - `fauust/docker-systemd:ubuntu-22.04`
 - `fauust/docker-systemd:ubuntu-23.04`
-- `fauust/docker-systemd:fedora-36`
 - `fauust/docker-systemd:fedora-37`
 - `fauust/docker-systemd:fedora-38`
 - `fauust/docker-systemd:almalinux-8`
@@ -44,7 +43,6 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull fauust/docker-ansible:ubuntu-20.04
 ❯ docker pull fauust/docker-ansible:ubuntu-22.04
 ❯ docker pull fauust/docker-ansible:ubuntu-23.04
-❯ docker pull fauust/docker-ansible:fedora-36
 ❯ docker pull fauust/docker-ansible:fedora-37
 ❯ docker pull fauust/docker-ansible:fedora-38
 ❯ docker pull fauust/docker-ansible:almalinux-8
