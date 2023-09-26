@@ -32,6 +32,7 @@ Example `base_system` arguments :
 - `fauust/docker-systemd:almalinux-9`
 - `fauust/docker-systemd:rockylinux-8`
 - `fauust/docker-systemd:rockylinux-9`
+- `fauust/docker-systemd:alpine-3.17`
 - `fauust/docker-systemd:alpine-3.18`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
@@ -51,6 +52,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:almalinux-9
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-8
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-9
+❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.17
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.18
 ```
 
