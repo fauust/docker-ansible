@@ -96,6 +96,12 @@ jobs:
           set -vx
           echo "IMG=${BASE_IMAGE}">>$GITHUB_ENV
           echo "REPO=docker-ansible">>$GITHUB_ENV
+      # See: https://github.com/actions/runner-images/issues/9425
+      - name: Patch crun
+        shell: bash
+        run: |
+          curl -Lo ./crun https://github.com/containers/crun/releases/download/1.14.3/crun-1.14.3-linux-amd64
+          sudo install crun /usr/bin/crun
       - name: Install qemu-user-static
         run: |
           sudo apt-get update
