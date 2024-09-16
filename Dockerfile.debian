@@ -1,4 +1,4 @@
-ARG base_image=debian-10
+ARG base_image=debian-sid
 FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \

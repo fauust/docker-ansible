@@ -18,7 +18,6 @@ Multi-arch docker containers for ansible testing. Images are available on:
 
 Example `base_system` arguments :
 
-- `fauust/docker-systemd:debian-10`
 - `fauust/docker-systemd:debian-11`
 - `fauust/docker-systemd:debian-12`
 - `fauust/docker-systemd:debian-sid`
@@ -40,7 +39,6 @@ Example `base_system` arguments :
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
 
 ```console
-❯ docker pull ghcr.io/fauust/docker-ansible:debian-10
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-11
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-12
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-sid
