@@ -27,6 +27,7 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:ubuntu-24.04`
 - `fauust/docker-ansible:fedora-39`
 - `fauust/docker-ansible:fedora-40`
+- `fauust/docker-ansible:fedora-41`
 - `fauust/docker-ansible:almalinux-8`
 - `fauust/docker-ansible:almalinux-9`
 - `fauust/docker-ansible:rockylinux-8`
@@ -35,6 +36,7 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:alpine-3.18`
 - `fauust/docker-ansible:alpine-3.19`
 - `fauust/docker-ansible:alpine-3.20`
+- `fauust/docker-ansible:alpine-3.21`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
 
@@ -48,6 +50,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-24.04
 ❯ docker pull ghcr.io/fauust/docker-ansible:fedora-39
 ❯ docker pull ghcr.io/fauust/docker-ansible:fedora-40
+❯ docker pull ghcr.io/fauust/docker-ansible:fedora-41
 ❯ docker pull ghcr.io/fauust/docker-ansible:almalinux-8
 ❯ docker pull ghcr.io/fauust/docker-ansible:almalinux-9
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-8
@@ -56,6 +59,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.18
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.19
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.20
+❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.21
 ```
 
 ## Notes
