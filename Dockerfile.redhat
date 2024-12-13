@@ -1,21 +1,16 @@
 ARG base_image=fedora-39
-FROM docker.io/fauust/docker-systemd:"$base_image"
+FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \
   && source /etc/os-release \
-  && case $VERSION_ID in \
-       41) \
-         extra_packages="python3-dnf python3-libdnf5" \
-       ;; \
-       *) \
-         extra_packages="python3-dnf" \
-       ;; \
-     esac \
   && yum -y install \
     ca-certificates \
     python3 \
-    "$extra_packages" \
+    python3-dnf \
     sudo \
+  && if [ "$VERSION_ID" = 41 ]; then \
+        yum -y install python3-libdnf5; \
+     fi \
   # clean doc \
   && rm -rf /usr/share/doc \
     /usr/share/man \
