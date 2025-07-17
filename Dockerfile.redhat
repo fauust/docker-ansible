@@ -2,7 +2,7 @@ ARG base_image=fedora-39
 FROM ghcr.io/fauust/docker-systemd:"$base_image"
 
 RUN set -eux \
-  && source /etc/os-release \
+  && . /etc/os-release \
   && yum -y install \
     ca-certificates \
     python3 \
