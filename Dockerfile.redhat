@@ -8,7 +8,7 @@ RUN set -eux \
     python3 \
     python3-dnf \
     sudo \
-  && if [ "$VERSION_ID" = 41 ]; then \
+  && if [ "$VERSION_ID" = 41 ] || [ "$VERSION_ID" = 42 ]; then \
         yum -y install python3-libdnf5; \
      fi \
   # clean doc \
