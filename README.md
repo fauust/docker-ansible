@@ -20,6 +20,7 @@ Example `base_system` arguments :
 
 - `fauust/docker-ansible:debian-11`
 - `fauust/docker-ansible:debian-12`
+- `fauust/docker-ansible:debian-13`
 - `fauust/docker-ansible:debian-sid`
 - `fauust/docker-ansible:ubuntu-22.04`
 - `fauust/docker-ansible:ubuntu-24.04`
@@ -39,6 +40,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ```console
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-11
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-12
+❯ docker pull ghcr.io/fauust/docker-ansible:debian-13
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-sid
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-22.04
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-24.04
