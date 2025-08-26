@@ -34,6 +34,7 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:alpine-3.20`
 - `fauust/docker-ansible:alpine-3.21`
 - `fauust/docker-ansible:alpine-3.22`
+- `fauust/docker-ansible:alpine-edge`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
 
@@ -54,6 +55,7 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.20
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.21
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.22
+❯ docker pull ghcr.io/fauust/docker-ansible:alpine-edge
 ```
 
 ## Notes
