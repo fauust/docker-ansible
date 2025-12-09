@@ -13,7 +13,7 @@ Multi-arch docker containers for ansible testing. Images are available on:
 ```console
 ❯ docker build . -f Dockerfile.debian -t ansible-debian-sid  --build-arg base_image=debian-sid
 ❯ docker build . -f Dockerfile.redhat -t ansible-almalinux-9  --build-arg base_image=almalinux-9
-❯ docker build . -f Dockerfile.alpine -t ansible-alpine-3.12  --build-arg base_image=alpine-3.12
+❯ docker build . -f Dockerfile.alpine -t ansible-alpine-3.23  --build-arg base_image=alpine-3.23
 ```
 
 Example `base_system` arguments :
@@ -30,10 +30,10 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:almalinux-9`
 - `fauust/docker-ansible:rockylinux-8`
 - `fauust/docker-ansible:rockylinux-9`
-- `fauust/docker-ansible:alpine-3.19`
 - `fauust/docker-ansible:alpine-3.20`
 - `fauust/docker-ansible:alpine-3.21`
 - `fauust/docker-ansible:alpine-3.22`
+- `fauust/docker-ansible:alpine-3.23`
 - `fauust/docker-ansible:alpine-edge`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
@@ -51,10 +51,10 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:almalinux-9
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-8
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-9
-❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.19
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.20
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.21
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.22
+❯ docker pull ghcr.io/fauust/docker-ansible:alpine-3.23
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-edge
 ```
 
