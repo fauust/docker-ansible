@@ -51,10 +51,10 @@ jobs:
           - image: ubuntu-26.04
             dockerfile: Dockerfile.debian
             platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x
-          - image: fedora-42
+          - image: fedora-43
             dockerfile: Dockerfile.redhat
             platforms: linux/amd64,linux/arm64/v8
-          - image: fedora-43
+          - image: fedora-44
             dockerfile: Dockerfile.redhat
             platforms: linux/amd64,linux/arm64/v8
           - image: centos-stream9
@@ -81,9 +81,6 @@ jobs:
           - image: rockylinux-10
             dockerfile: Dockerfile.redhat
             platforms: linux/amd64,linux/arm64/v8
-          - image: alpine-3.20
-            dockerfile: Dockerfile.alpine
-            platforms: linux/amd64,linux/arm64/v8
           - image: alpine-3.21
             dockerfile: Dockerfile.alpine
             platforms: linux/amd64,linux/arm64/v8
@@ -91,6 +88,9 @@ jobs:
             dockerfile: Dockerfile.alpine
             platforms: linux/amd64,linux/arm64/v8
           - image: alpine-3.23
+            dockerfile: Dockerfile.alpine
+            platforms: linux/amd64,linux/arm64/v8
+          - image: alpine-3.24
             dockerfile: Dockerfile.alpine
             platforms: linux/amd64,linux/arm64/v8
           - image: alpine-edge

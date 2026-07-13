@@ -21,10 +21,10 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:almalinux-10`
 - `fauust/docker-ansible:almalinux-8`
 - `fauust/docker-ansible:almalinux-9`
-- `fauust/docker-ansible:alpine-3.20`
 - `fauust/docker-ansible:alpine-3.21`
 - `fauust/docker-ansible:alpine-3.22`
 - `fauust/docker-ansible:alpine-3.23`
+- `fauust/docker-ansible:alpine-3.24`
 - `fauust/docker-ansible:alpine-edge`
 - `fauust/docker-ansible:centos-stream10`
 - `fauust/docker-ansible:centos-stream9`
@@ -32,8 +32,8 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:debian-12`
 - `fauust/docker-ansible:debian-13`
 - `fauust/docker-ansible:debian-sid`
-- `fauust/docker-ansible:fedora-42`
 - `fauust/docker-ansible:fedora-43`
+- `fauust/docker-ansible:fedora-44`
 - `fauust/docker-ansible:rockylinux-10`
 - `fauust/docker-ansible:rockylinux-8`
 - `fauust/docker-ansible:rockylinux-9`
