@@ -28,7 +28,6 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:alpine-edge`
 - `fauust/docker-ansible:centos-stream10`
 - `fauust/docker-ansible:centos-stream9`
-- `fauust/docker-ansible:debian-11`
 - `fauust/docker-ansible:debian-12`
 - `fauust/docker-ansible:debian-13`
 - `fauust/docker-ansible:debian-sid`
@@ -54,7 +53,6 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:alpine-edge
 ❯ docker pull ghcr.io/fauust/docker-ansible:centos-stream9
 ❯ docker pull ghcr.io/fauust/docker-ansible:centos-stream10
-❯ docker pull ghcr.io/fauust/docker-ansible:debian-11
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-12
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-13
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-sid
