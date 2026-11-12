@@ -33,12 +33,14 @@ Example `base_system` arguments :
 - `fauust/docker-ansible:debian-sid`
 - `fauust/docker-ansible:fedora-43`
 - `fauust/docker-ansible:fedora-44`
+- `fauust/docker-ansible:fedora-45`
 - `fauust/docker-ansible:rockylinux-10`
 - `fauust/docker-ansible:rockylinux-8`
 - `fauust/docker-ansible:rockylinux-9`
 - `fauust/docker-ansible:ubuntu-22.04`
 - `fauust/docker-ansible:ubuntu-24.04`
 - `fauust/docker-ansible:ubuntu-26.04`
+- `fauust/docker-ansible:ubuntu-26.10`
 
 The following containers are available from [Docker Hub](https://hub.docker.com/r/fauust/docker-ansible).
 
@@ -56,14 +58,16 @@ The following containers are available from [Docker Hub](https://hub.docker.com/
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-12
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-13
 ❯ docker pull ghcr.io/fauust/docker-ansible:debian-sid
-❯ docker pull ghcr.io/fauust/docker-ansible:fedora-42
 ❯ docker pull ghcr.io/fauust/docker-ansible:fedora-43
+❯ docker pull ghcr.io/fauust/docker-ansible:fedora-44
+❯ docker pull ghcr.io/fauust/docker-ansible:fedora-45
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-10
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-8
 ❯ docker pull ghcr.io/fauust/docker-ansible:rockylinux-9
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-22.04
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-24.04
 ❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-26.04
+❯ docker pull ghcr.io/fauust/docker-ansible:ubuntu-26.10
 ```
 
 ## Notes
